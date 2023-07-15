@@ -5,6 +5,11 @@
 # macOS: `$HOME`/Library/Application Support/halloy
 # Windows: `{FOLDERID_RoamingAppData}`\halloy
 
+# Configuration wiki
+#
+# Visit our wiki for all configurations options
+# https://github.com/squidowl/halloy/wiki/Configuration
+
 # Theme
 # - Add theme files to the themes directory and fill this with the filename
 #   without the .yaml extension to select the theme you want
@@ -99,3 +104,14 @@ dashboard:
   # - NewPane: Open a new pane for each unique channel [default]
   # - ReplacePane: Replace the currently selected pane
   sidebar_default_action: NewPane
+
+# Notification
+# Display a OS level notification on certain events.
+# 
+# For information about events and sound
+# https://github.com/squidowl/halloy/wiki/Configuration#notification
+notification:
+  Connected:
+    sound: glass
+  Disconnected:
+    sound: basso
